@@ -5,3 +5,5 @@
 
 .about-profile::after{content:"";display:table;clear:both}.author-photo{float:right;width: min(36%,300px);height:auto;margin:0 0 28px 36px;border-radius:6px;display:block}
 @media(max-width:600px){.author-photo{float:none;width:100%;max-width:300px;margin:0 0 28px}}
+
+.book-illustration{display:block;width:100%;max-width:740px;height:auto;margin:0 0 32px;border-radius:6px}
