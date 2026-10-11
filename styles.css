@@ -22,3 +22,5 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 .brand-with-photo .brand-copy>span{font:14px/1.5 Arial,sans-serif;letter-spacing:1.4px;max-width:350px}.brand-with-photo{min-width:0}@media(max-width:600px){.brand-with-photo .brand-copy>span{font-size:12px;letter-spacing:1px;max-width:235px}}
 
 .footer-logo{display:inline-block;line-height:0}.footer-logo img{display:block;width:190px;height:190px;max-width:100%;border-radius:4px}footer>div:first-child{min-width:190px}@media(max-width:600px){.footer-logo img{width:160px;height:160px}}
+
+.illustrator-profile{clear:both;border-top:1px solid var(--line);margin-top:48px;padding-top:36px;display:flow-root}.illustrator-photo{float:right;width: min(36%,300px);height:auto;margin:0 0 24px 32px;border-radius:6px}.illustrator-profile h2{max-width:800px}@media(max-width:600px){.illustrator-photo{float:none;width:100%;max-width:300px;margin:0 0 24px}}
