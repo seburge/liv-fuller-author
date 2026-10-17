@@ -23,3 +23,15 @@ The homepage features The Blessing Box. Educator conversation starters and a med
 Contact and release-notification forms use Netlify Forms. Detection must be enabled in Netlify. Submissions are stored in the site's Forms dashboard; release signups do not automatically send a newsletter or release email. Export the release list and send the notification when the release is confirmed. Email notifications for contact submissions can be configured in Netlify Forms settings. The privacy page describes the collection purpose.
 
 Add a sample chapter, confirmed release date, buying links, endorsements, and dated public events only after those materials are supplied and approved. The site currently makes no claims about these.
+
+## Contact recipient routing
+
+`contact.html` registers `contact` (Liv) and `contact-quincy` (Quincy). Its recipient picker updates both the form name and hidden `form-name` field before the browser posts the message. The hidden Quincy skeleton registers all matching fields with Netlify. Without JavaScript, Quincy has a direct email link and cannot accidentally be selected for Liv's form.
+
+Before publishing this change, configure Netlify **Forms → Submission notifications**:
+
+- Keep Liv's existing notification destination, scoped to the `contact` form.
+- Add an email notification for `contact-quincy` to `Quincy@themousepatrol.com`.
+- If Liv currently has a notification for **all forms**, scope it so Quincy submissions are excluded, preserving any separate release-signup and reader-feedback notifications.
+
+The `contact-quincy` form becomes available after a deploy containing this HTML. Coordinate the deploy and notification setup, and verify the two form-specific destinations before considering routing complete. Existing submissions remain in the original `contact` form and are not resent.
