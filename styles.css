@@ -26,3 +26,6 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 .illustrator-profile{clear:both;border-top:1px solid var(--line);margin-top:48px;padding-top:36px;display:flow-root}.illustrator-photo{float:right;width: min(36%,300px);height:auto;margin:0 0 24px 32px;border-radius:6px}.illustrator-profile h2{max-width:800px}@media(max-width:600px){.illustrator-photo{float:none;width:100%;max-width:300px;margin:0 0 24px}}
 
 .bio-heading{font-size:clamp(2rem,4vw,2.8rem);line-height:1.15;margin-bottom:10px}.bio-role{font-weight:bold;margin-top:0;margin-bottom:28px}
+
+/* Crop the uploaded badge in the layout, preserving its original pixels. */
+.business-note{display:flex;align-items:center;gap:24px;width:100%;padding:24px 0 8px;border-top:1px solid var(--line)}.business-badge{display:block;position:relative;flex:0 0 120px;width:120px;aspect-ratio:333/429;overflow:hidden;border-radius:16% / 12.5%;line-height:0}.business-badge img{position:absolute;display:block;width:104.804805%;max-width:none;height:auto;left:-1.801802%;top:-2.797203%}.business-note p{margin:0;max-width:740px;font-size:14px;line-height:1.75;min-width:0}@media(max-width:600px){.business-note{flex-direction:column;align-items:flex-start;gap:16px}.business-badge{flex-basis:auto}}
