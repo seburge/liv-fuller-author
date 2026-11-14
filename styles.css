@@ -29,3 +29,14 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 
 /* Crop the uploaded badge in the layout, preserving its original pixels. */
 .business-note{display:flex;align-items:center;gap:24px;width:100%;padding:24px 0 8px;border-top:1px solid var(--line)}.business-badge{display:block;position:relative;flex:0 0 120px;width:120px;aspect-ratio:333/429;overflow:hidden;border-radius:16% / 12.5%;line-height:0}.business-badge img{position:absolute;display:block;width:104.804805%;max-width:none;height:auto;left:-1.801802%;top:-2.797203%}.business-note p{margin:0;max-width:740px;font-size:14px;line-height:1.75;min-width:0}@media(max-width:600px){.business-note{flex-direction:column;align-items:flex-start;gap:16px}.business-badge{flex-basis:auto}}
+
+/* Site-wide purchase call-to-action */
+.header-inner{position:relative;padding-top:80px}
+.header-buy-button{position:absolute;top:18px;right:40px;display:inline-flex;align-items:center;justify-content:center;padding:11px 22px;background:var(--cyan);color:#102d58;border-radius:4px;text-decoration:none;font:700 14px/1.4 Arial,sans-serif;white-space:nowrap}
+.header-buy-button:hover{background:#8bf0fa;color:#102d58}
+.header-buy-button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.book-title-row{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-bottom:28px}
+.book-title-row h1{margin:0}
+.book-buy-button{margin:0;white-space:nowrap}
+@media(max-width:600px){.header-inner{padding-top:76px}.header-buy-button{top:16px;right:22px}.book-title-row{gap:14px}.book-title-row h1{font-size:38px}}
+@media print{.header-buy-button{display:none}}
