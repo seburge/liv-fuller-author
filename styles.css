@@ -42,4 +42,4 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 
 /* Portrait cover sizing for the Home and Books pages. */
 .book-feature .home-book-cover{max-width:300px}
-.book-illustration.books-page-cover{width:100%;max-width:420px;height:auto;margin:0 auto 32px;object-fit:contain}
+.book-illustration.books-page-cover{width:100%;max-width:420px;height:auto;margin:0 0 32px;object-fit:contain}
