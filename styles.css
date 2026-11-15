@@ -29,20 +29,14 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 /* Crop the uploaded badge in the layout, preserving its original pixels. */
 .business-note{display:flex;align-items:center;gap:24px;width:100%;padding:24px 0 8px;border-top:1px solid var(--line)}.business-badge{display:block;position:relative;flex:0 0 120px;width:120px;aspect-ratio:333/429;overflow:hidden;border-radius:16% / 12.5%;line-height:0}.business-badge img{position:absolute;display:block;width:104.804805%;max-width:none;height:auto;left:-1.801802%;top:-2.797203%}.business-note p{margin:0;max-width:740px;font-size:14px;line-height:1.75;min-width:0}@media(max-width:600px){.business-note{flex-direction:column;align-items:flex-start;gap:16px}.business-badge{flex-basis:auto}}
 
-/* Site-wide purchase call-to-action */
-.header-inner{position:relative;padding-top:80px}
-.header-buy-button{position:absolute;top:18px;right:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:4px}
-.header-buy-button:hover,.button.book-buy-button:hover{filter:brightness(.95)}
-.header-buy-button:focus-visible{outline:3px solid #fff;outline-offset:3px}
-.book-title-row{display:flex;flex-direction:column;align-items:center;gap:22px;margin-bottom:28px;text-align:center}
+/* Books page purchase button */
+.book-title-row{display:flex;flex-direction:column;align-items:center;margin-bottom:28px;text-align:center}
 .book-title-row h1{margin:0}
-.button.book-buy-button{margin:0;padding:0;background:transparent;border-radius:4px}
-.header-buy-button img,.book-buy-button img{display:block;height:auto}
-.header-buy-button img{width:182px}
-.book-buy-button img{max-width:100%}
-@media(max-width:600px){.header-inner{padding-top:76px}.header-buy-button{top:16px;right:22px}.book-title-row{gap:14px}.book-title-row h1{font-size:38px}}
-@media print{.header-buy-button{display:none}}
+.button.book-buy-button{display:block;width:fit-content;max-width:100%;margin:0 auto 32px;padding:0;background:transparent;border-radius:4px}
+.button.book-buy-button:hover{filter:brightness(.95)}
+.book-buy-button img{display:block;max-width:100%;height:auto}
+@media(max-width:600px){.book-title-row h1{font-size:38px}}
 
 /* Portrait cover sizing for the Home and Books pages. */
 .book-feature .home-book-cover{max-width:300px}
-.book-illustration.books-page-cover{width:100%;max-width:420px;height:auto;margin:0 auto 32px;object-fit:contain}
+.book-illustration.books-page-cover{width:100%;max-width:420px;height:auto;margin:0 auto 20px;object-fit:contain}
