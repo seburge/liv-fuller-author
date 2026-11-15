@@ -31,12 +31,15 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 
 /* Site-wide purchase call-to-action */
 .header-inner{position:relative;padding-top:80px}
-.header-buy-button{position:absolute;top:18px;right:40px;display:inline-flex;align-items:center;justify-content:center;padding:11px 22px;background:var(--cyan);color:#102d58;border-radius:4px;text-decoration:none;font:700 14px/1.4 Arial,sans-serif;white-space:nowrap}
-.header-buy-button:hover{background:#8bf0fa;color:#102d58}
+.header-buy-button{position:absolute;top:18px;right:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:4px}
+.header-buy-button:hover,.button.book-buy-button:hover{filter:brightness(.95)}
 .header-buy-button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .book-title-row{display:flex;flex-direction:column;align-items:center;gap:22px;margin-bottom:28px;text-align:center}
 .book-title-row h1{margin:0}
-.book-buy-button{margin:0;white-space:nowrap}
+.button.book-buy-button{margin:0;padding:0;background:transparent;border-radius:4px}
+.header-buy-button img,.book-buy-button img{display:block;height:auto}
+.header-buy-button img{width:182px}
+.book-buy-button img{max-width:100%}
 @media(max-width:600px){.header-inner{padding-top:76px}.header-buy-button{top:16px;right:22px}.book-title-row{gap:14px}.book-title-row h1{font-size:38px}}
 @media print{.header-buy-button{display:none}}
 
