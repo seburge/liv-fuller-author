@@ -40,3 +40,12 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 /* Portrait cover sizing for the Home and Books pages. */
 .book-feature .home-book-cover{max-width:300px}
 .book-illustration.books-page-cover{width:100%;max-width:420px;height:auto;margin:0 auto 20px;object-fit:contain}
+
+/* Header purchase link */
+.header-inner{position:relative;padding-top:80px}
+.header-buy-button{position:absolute;top:18px;right:40px;display:block;border-radius:4px}
+.header-buy-button img{display:block;height:auto}
+.header-buy-button:hover{filter:brightness(.95)}
+.header-buy-button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:600px){.header-inner{padding-top:76px}.header-buy-button{top:16px;right:22px}}
+@media print{.header-buy-button{display:none}}
