@@ -50,6 +50,4 @@ footer>div:nth-child(2){display:flex;gap:24px;align-items:center;flex-wrap:wrap;
 @media(max-width:600px){.header-inner{padding-top:76px}.header-buy-button{top:16px;right:22px}}
 @media print{.header-buy-button{display:none}}
 
-.merch-adventure{display:grid;grid-template-columns:minmax(0,520px) minmax(0,1fr);gap:28px;align-items:center;margin-bottom:32px}
-.merch-adventure .book-illustration,.merch-adventure p{margin-bottom:0}
-@media(max-width:700px){.merch-adventure{grid-template-columns:1fr;gap:16px}}
+.merch-adventure p{margin-bottom:20px}
